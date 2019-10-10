@@ -127,3 +127,40 @@ a:hover {
         padding-right: 0;
     }
 }
+
+
+/* Logo */
+#logo {
+    width: 250px;
+}
+path.logo-dorokhin {
+    fill: #702fdf;
+}
+
+path.logo-moscow {
+    fill: #0fb646;
+}
+path.logo-dot {
+    fill: #ff00c4;
+    animation:dot-flash 4s linear infinite;
+}
+@keyframes dot-flash {
+    0% {
+        opacity:0
+    }
+    20% {
+        opacity:0
+    }
+    21% {
+        opacity:1
+    }
+    80% {
+        opacity:1
+    }
+    81% {
+        opacity:0
+    }
+    100% {
+        opacity:0
+    }
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <meta charset="UTF-8">
   <title>flexbox template</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -33,18 +34,187 @@
           </svg>
         </a>
       </li>
-      <li class="item"><a href="#">Home</a></li>
-      <li class="item"><a href="#">GitHub</a></li>
-      <li class="item"><a href="#">Blog</a></li>
-      <li class="item button"><a href="#">Log In</a></li>
-      <li class="item button secondary"><a href="#">Sign Up</a></li>
-      <li class="toggle"><a href="#" class="toggle"><i class="toggle-icon fa fa-bars"></i></a></li>
+      <li class="header__menu__item"><a href="#">Home</a></li>
+      <li class="header__menu__item"><a href="#">GitHub</a></li>
+      <li class="header__menu__item"><a href="#">Blog</a></li>
+      <li class="header__menu__item button"><a href="#">Log In</a></li>
+      <li class="header__menu__item button secondary"><a href="#">Sign Up</a></li>
+      <li class="header__menu__toggle">
+        <a href="#" class="header__menu__toggle">
+          <i class="header__menu__toggle-icon fa fa-bars"></i>
+        </a>
+      </li>
     </ul>
   </nav>
 </section>
 
-<div class="container">
-</div>
+<main class="main columns">
+  <section class="column main-column">
+    <a class="article first-article" href="#">
+      <figure class="article-image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
+      </figure>
+      <div class="article-body">
+        <h2 class="article-title">
+          Hello World
+        </h2>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
+        </p>
+        <footer class="article-info">
+          <span>By Joe Smith</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+
+    <div class="columns">
+      <div class="column nested-column">
+        <a class="article" href="#">
+          <figure class="article-image">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-02-lo.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            <h2 class="article-title">
+              Hello World
+            </h2>
+            <p class="article-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+      </div>
+
+      <div class="column">
+        <a class="article" href="#">
+          <figure class="article-image">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-03-lo.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            <h2 class="article-title">
+              Hello World
+            </h2>
+            <p class="article-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+        <a class="article" href="#">
+          <div class="article-body">
+            <h2 class="article-title">
+              Hello World
+            </h2>
+            <p class="article-content">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+        <a class="article" href="#">
+          <div class="article-body">
+            <h2 class="article-title">
+              Hello World
+            </h2>
+            <p class="article-content">
+              Lorem ipsum dolor sit amet feugiat facilisis.
+            </p>
+            <footer class="article-info">
+              <span>By Joe Smith</span>
+              <span>42 comments</span>
+            </footer>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="column">
+    <a class="article" href="#">
+      <figure class="article-image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-04-lo.jpg" alt="">
+      </figure>
+      <div class="article-body">
+        <h2 class="article-title">
+          Hello World
+        </h2>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <footer class="article-info">
+          <span>By Joe Smith</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+    <a class="article" href="#">
+      <div class="article-body">
+        <h2 class="article-title">
+          Hello World
+        </h2>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <footer class="article-info">
+          <span>By Joe Smith</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+    <a class="article" href="#">
+      <div class="article-body">
+        <h2 class="article-title">
+          Hello World
+        </h2>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <footer class="article-info">
+          <span>By Joe Smith</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+    <a class="article" href="#">
+      <div class="article-body">
+        <h2 class="article-title">
+          Hello World
+        </h2>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <footer class="article-info">
+          <span>By Joe Smith</span>
+          <span>42 comments</span>
+        </footer>
+      </div>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <section class="footer__dorokhin">
+    <ul class="footer__dorokhin__links-list">
+      <li class="footer__dorokhin__links-list__item"><a href="https://github.com/dorokhin/">GitHub</a></li>
+      <li class="footer__dorokhin__links-list__item"><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2019 Andrew Dorokhin</li>
+    </ul>
+  </section>
+</footer>
 </body>
 
 <script src="js/main.js"></script>

@@ -1,6 +1,5 @@
-document.querySelector(".toggle").addEventListener("click", (e) => {
-    console.log("click");
-    let menuButtonIcon = document.querySelector("i.toggle-icon");
+document.querySelector(".header__menu__toggle").addEventListener("click", (e) => {
+    let menuButtonIcon = document.querySelector("i.header__menu__toggle-icon");
 
     if (menuButtonIcon.classList.contains("fa-bars")) {
         menuButtonIcon.classList.remove("fa-bars");
@@ -10,7 +9,7 @@ document.querySelector(".toggle").addEventListener("click", (e) => {
         menuButtonIcon.classList.add("fa-bars");
     }
 
-    let mobileMenuElements = document.querySelectorAll(".item");
+    let mobileMenuElements = document.querySelectorAll(".header__menu__item");
 
     mobileMenuElements.forEach(function(menuItem) {
         if (menuItem.classList.contains("active")) {
@@ -20,4 +19,3 @@ document.querySelector(".toggle").addEventListener("click", (e) => {
         }
     });
 });
-
